@@ -8,7 +8,6 @@ lines = data.split("\n")
 
 print(lines[0])
 # Using the Counter Library
-# where the key is the "one,two, three (numbers)" and the value is the count
 
 from collections import Counter
 
@@ -36,4 +35,5 @@ print(total_counter)
 for num in range(1, 10):
     print(num, total_counter[str(num)])
 
-# The code shows that the pattern did not necessarily follow Benford's distribution as expected
+# The code shows that the pattern did not necessarily follow Benford's distribution as expected.
+# However, the lower digits appear to be more frequent than the latter digits
