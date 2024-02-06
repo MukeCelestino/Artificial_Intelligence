@@ -12,6 +12,7 @@ print(a, b)
 
 plt.plot(df.get("median_income"), a*df.get("median_income") + b)
 plt.scatter(df.get("median_income"), df.get("happyScore"))
+
 plt.show()
 
 # According to the graph/plot, Happiness score increases as income increases
