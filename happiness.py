@@ -7,8 +7,8 @@ df = pd.read_csv("https://gist.githubusercontent.com/tacksoo/3ba379df0f5249e3c64
 # df.head()
 plt.scatter(df.get("median_income"), df.get("happyScore"))
 
+# getting a and b
 a, b = np.polyfit(df.get("median_income"), df.get("happyScore"),1) # y = a*x + b
-print(a, b)
 
 plt.plot(df.get("median_income"), a*df.get("median_income") + b)
 plt.scatter(df.get("median_income"), df.get("happyScore"))
